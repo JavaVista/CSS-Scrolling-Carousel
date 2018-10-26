@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CSS Scrolling Carousel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    </head>
+</head>
+
 <body>
-<!--  CMYK colors = refers to the four inks used in color printing: cyan, magenta, yellow, and black -->
-<div class="galeria">
-    <div class="cyan"></div>
-    <div class="magenta"></div>
-    <div class="yellow"></div>
-    <div class="black"></div>
-</div>
+    <div class="container">
 
-<div class="container">
-    <input type="radio" name="control" id="slideUno" class="control-radio">
-    <input type="radio" name="control" id="slideDos" class="control-radio">
-    <input type="radio" name="control" id="slideTres" class="control-radio">
-    <input type="radio" name="control" id="slideCuatro" class="control-radio">
-</div>
+        <input type="radio" name="control" id="slideUno" class="control-radio">
+        <input type="radio" name="control" id="slideDos" class="control-radio">
+        <input type="radio" name="control" id="slideTres" class="control-radio">
+        <input type="radio" name="control" id="slideCuatro" class="control-radio">
 
+        <!--  CMYK colors = refers to the four inks used in color printing: cyan, magenta, yellow, and black -->
+        <div class="galeria">
+            <div class="cyan"></div>
+            <div class="magenta"></div>
+            <div class="yellow"></div>
+            <div class="black"></div>
+        </div>
+
+        <div class="control-slide">
+            <label for="slideUno"></label>
+            <label for="slideDos"></label>
+            <label for="slideTres"></label>
+            <label for="slideCuatro"></label>
+        </div>
+
+    </div>
 </body>
+
 </html>
