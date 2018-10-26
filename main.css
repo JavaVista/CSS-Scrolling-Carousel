@@ -16,6 +16,7 @@
     position: relative;
     width: 600px;
     font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .control-slide {
@@ -32,20 +33,20 @@
     opacity: 1; /* DIVs visible  */
     color: red;
 }
-
+/* Image provided by pixabay.com  */
 .cyan {
     background-color: cyan;
-    background-image: url('/img/floating-tire-72963_640.jpg')
+    background-image: url('img/floating-tire-72963_640.jpg')
 }
 
 .magenta {
     background-color: magenta;
-    background-image: url('/img/woman-591576_640.jpg')
+    background-image: url('img/woman-591576_640.jpg')
 }
 
 .yellow {
     background-color: yellow;
-    background-image: url('/img/sunflowers-3640938_640.jpg')
+    background-image: url('img/sunflowers-3640938_640.jpg')
 }
 
 .gray {
