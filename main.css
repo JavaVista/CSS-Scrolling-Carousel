@@ -9,6 +9,7 @@
     height: 300px;
     width: 100%;
     opacity: 0; /* DIVs hidden */
+    transition: opacity 800ms ease-in-out; /* smooth transition between slides */
 }
 
 .container {
@@ -34,57 +35,74 @@
 
 .cyan {
     background-color: cyan;
+    background-image: url('/img/floating-tire-72963_640.jpg')
 }
 
 .magenta {
     background-color: magenta;
+    background-image: url('/img/woman-591576_640.jpg')
 }
 
 .yellow {
     background-color: yellow;
+    background-image: url('/img/sunflowers-3640938_640.jpg')
 }
 
 .gray {
     background-color: gray;
+    background-image: url('img/family-2686260_640.jpg')
 }
 
 #slideDos:checked ~ .control-slide > label:nth-child(3)::after {
-    content: '>';
+    font-family: "Material Icons";
+    content: '\e5cc';
     float: right; /* set content control to the right side */
 }
 
 #slideDos:checked ~ .control-slide > label:nth-child(1)::after {
-    content: '<';
+    font-family: "Material Icons";
+    content: '\e5cb';
     float: left; /* set content control to the left side */
 }
 
 #slideTres:checked ~ .control-slide > label:nth-child(4)::after {
-    content: '>';
+    font-family: "Material Icons";
+    content: '\e5cc';
     float: right; /* set content control to the right side */
 }
 
 #slideTres:checked ~ .control-slide > label:nth-child(2)::after {
-    content: '<';
+    font-family: "Material Icons";
+    content: '\e5cb';
     float: left; /* set content control to the left side */
 }
 
 #slideCuatro:checked ~ .control-slide > label:nth-child(1)::after {
-    content: '>';
+    font-family: "Material Icons";
+    content: '\e5cc';
     float: right; /* set content control to the right side */
 }
 
 #slideCuatro:checked ~ .control-slide > label:nth-child(3)::after {
-    content: '<';
+    font-family: "Material Icons";
+    content: '\e5cb';
     float: left; /* set content control to the left side */
 }
 
 /* Right point to slide 2 and Left is the last slide */
 #slideUno:checked ~ .control-slide > label:nth-child(2)::after {
-    content: '>';
+    font-family: "Material Icons";
+    content: '\e5cc';
     float: right; /* set content control to the right side */
 }
 
 #slideUno:checked ~ .control-slide > label:nth-last-child(1)::after {
-    content: '<';
+    font-family: "Material Icons";
+    content: '\e5cb';
     float: left; /* set content control to the left side */
 }
+
+/* NOTE:
+ * radio buttons in the top can be hidden with display:none
+ * content of pseudo selector can be designed using border over the pseudo element instead of '>' or '<'
+ */
