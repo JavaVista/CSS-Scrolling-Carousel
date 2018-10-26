@@ -1,0 +1,11 @@
+.galeria {
+    position: relative;
+    width: 100%; /* Parents DIV width */
+}
+
+.galeria > div {
+    position: absolute; /* child DIVs would be place behind the other */
+    top: 0;
+    height: 400px;
+    width: 100%;
+}
