@@ -6,9 +6,21 @@
 .galeria > div {
     position: absolute; /* child DIVs would be place behind the other */
     top: 0;
-    height: 400px;
+    height: 300px;
     width: 100%;
     opacity: 0; /* DIVs hidden */
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    font-size: xx-large;
+}
+
+.control-slide {
+    position: absolute;
+    width: 100%;
+    top: 150px;
 }
 
 /* The ~ selects all siblings after the selector. When slideName is checked  the opacity is off*/
@@ -23,18 +35,56 @@
 .cyan {
     background-color: cyan;
 }
+
 .magenta {
     background-color: magenta;
 }
+
 .yellow {
     background-color: yellow;
 }
-.black {
-    background-color: black;
+
+.gray {
+    background-color: gray;
 }
 
-.control-slide {
-    position: absolute;
-    width: 100%;
-    top: 100%;
+#slideDos:checked ~ .control-slide > label:nth-child(3)::after {
+    content: '>';
+    float: right; /* set content control to the right side */
+}
+
+#slideDos:checked ~ .control-slide > label:nth-child(1)::after {
+    content: '<';
+    float: left; /* set content control to the left side */
+}
+
+#slideTres:checked ~ .control-slide > label:nth-child(4)::after {
+    content: '>';
+    float: right; /* set content control to the right side */
+}
+
+#slideTres:checked ~ .control-slide > label:nth-child(2)::after {
+    content: '<';
+    float: left; /* set content control to the left side */
+}
+
+#slideCuatro:checked ~ .control-slide > label:nth-child(1)::after {
+    content: '>';
+    float: right; /* set content control to the right side */
+}
+
+#slideCuatro:checked ~ .control-slide > label:nth-child(3)::after {
+    content: '<';
+    float: left; /* set content control to the left side */
+}
+
+/* Right point to slide 2 and Left is the last slide */
+#slideUno:checked ~ .control-slide > label:nth-child(2)::after {
+    content: '>';
+    float: right; /* set content control to the right side */
+}
+
+#slideUno:checked ~ .control-slide > label:nth-last-child(1)::after {
+    content: '<';
+    float: left; /* set content control to the left side */
 }
